@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+<script src="./SortTestHelper.js"></script>
+<!-- <script src="./main.js"></script> -->
+<<!-- script src="./insertSort.js"></script>
+<script src="./selectSort.js"></script>
+<script src="./mergeSort.js"></script>
+<script src="./quickSort.js"></script> -->
+<script src="./heapSort.js"></script>
+<script>
+// 测试
+function main() {
+	var n = 100000;
+	// var arr = generateNearOrderedArray(n, 100);
+	var arr1 = generateRandomArray(n, 0, n);
+	var arr2 = copyArray(arr1, n);
+	var arr3 = copyArray(arr1, n);
+	var arr4 = copyArray(arr1, n);
+	var arr5 = copyArray(arr1, n);
+	var arr6 = copyArray(arr1, n);
+	var arr7 = copyArray(arr1, n);
+	// testSort("merge Sort", mergeSort, arr1, n);
+	// testSort("quick Sort", quickSort, arr2, n);
+	// testSort("quick Sort 2", quickSort2, arr3, n);
+	// testSort("quick Sort 3", quickSort3, arr4, n);
+	testSort("Heap Sort 1", heapSort1, arr5, n);
+	testSort("heap Sort 2", heapSort2, arr6, n);
+	testSort("heap Sort 3", heapSort, arr7, n);
+	
+};
+main();
+</script>
+</body>
+</html>
