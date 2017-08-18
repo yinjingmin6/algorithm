@@ -2,7 +2,7 @@
 * @Author: JMyin
 * @Date:   2017-08-17 15:35:17
 * @Last Modified by:   JMyin
-* @Last Modified time: 2017-08-17 20:27:57
+* @Last Modified time: 2017-08-18 09:36:44
 */
 function BST() {
 	var root = null;  // 根节点
@@ -204,6 +204,7 @@ function BST() {
 	};
 	// 删除以node为根的二分搜索树中的键值为key节点
 	// 返回删除节点后新的二分搜索树的根
+	// 删除二分搜素搜书的任意的一个节点的事件复杂度为O(logn)
 	function  __removeNode(node, key) {
 		if(node === null) {
 			return null;
